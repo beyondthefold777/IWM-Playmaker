@@ -34,13 +34,13 @@ async function backtest() {
     const slice = data.slice(0, i+1);
     const signal = scoreSignal(slice);
 
-    // CHANGED: 3+ for 1.5/day (was 4)
-    if (Math.abs(signal.score) < 3) continue;
+    // Crash catcher: 4+ score
+    if (Math.abs(signal.score) < 4) continue;
 
     // 100 min cooldown = 1-2/day
     if (i - lastTradeIdx < 20) continue;
 
-    // Time filters
+    // Time filters - market hours only
     const dt = new Date((data[i] as any).datetime);
     const etHour = dt.getUTCHours() - 4 + dt.getUTCMinutes()/60;
     if (etHour < 9.6 || etHour > 15.5) continue;
@@ -49,14 +49,14 @@ async function backtest() {
     const isLong = signal.bias === 'LONG';
     const entry = data[i+1].close;
 
-    // 1/day scalp: 0.35% TP, 0.20% SL, 75 min max
+    // CRASH CATCHER: 0.50% TP for big moves, 0.20% SL, 75 min max
     let exit = entry, exitReason = 'timeout';
     for (let j = 1; j <= 15; j++) {
       const c = data[i+j];
       if (!c) break;
       const pnl = isLong ? (c.high - entry)/entry : (entry - c.low)/entry;
       const loss = isLong ? (entry - c.low)/entry : (c.high - entry)/entry;
-      if (pnl >= 0.0035) { exit = isLong ? entry*1.0035 : entry*0.9965; exitReason='TP'; break; }
+      if (pnl >= 0.0050) { exit = isLong ? entry*1.005 : entry*0.995; exitReason='TP'; break; }
       if (loss >= 0.0020) { exit = isLong ? entry*0.998 : entry*1.002; exitReason='SL'; break; }
       if (j===15) exit = c.close;
     }
@@ -82,7 +82,7 @@ async function backtest() {
   const total = trades.length;
   const winRate = total ? (wins/total*100).toFixed(1) : '0';
   
-  console.log(`\n--- 1.5/DAY BACKTEST (score >=3, 100min cooldown) ---`);
+  console.log(`\n--- CRASH CATCHER BACKTEST (score >=4, 0.50% TP / 0.20% SL) ---`);
   console.log(`Total: ${total} (${(total/21).toFixed(1)}/day) | Wins: ${wins} | Losses: ${losses} | WR: ${winRate}%`);
   
   const avgWin = trades.filter(t=>t.win).reduce((a,t)=>a+parseFloat(t.pnl),0) / (wins||1);
