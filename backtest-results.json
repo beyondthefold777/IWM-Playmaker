@@ -1,0 +1,200 @@
+[
+  {
+    "time": "2026-08-04 14:05:00",
+    "bias": "LONG",
+    "score": 4,
+    "reasons": "EMA up | RSI 64 | >VWAP | Vol",
+    "entry": "301.85",
+    "exit": "302.17",
+    "pnl": "0.11%",
+    "result": "timeout",
+    "win": true
+  },
+  {
+    "time": "2026-08-05 10:05:00",
+    "bias": "LONG",
+    "score": 4,
+    "reasons": "EMA up | RSI 59 | >VWAP | Vol",
+    "entry": "302.71",
+    "exit": "302.10",
+    "pnl": "-0.20%",
+    "result": "SL",
+    "win": false
+  },
+  {
+    "time": "2026-08-06 14:00:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 42 | <VWAP | Vol",
+    "entry": "298.83",
+    "exit": "298.81",
+    "pnl": "0.01%",
+    "result": "timeout",
+    "win": true
+  },
+  {
+    "time": "2026-08-07 11:10:00",
+    "bias": "LONG",
+    "score": 4,
+    "reasons": "EMA up | RSI 62 | >VWAP | Vol",
+    "entry": "300.80",
+    "exit": "300.79",
+    "pnl": "-0.00%",
+    "result": "timeout",
+    "win": false
+  },
+  {
+    "time": "2026-08-13 11:25:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 36 | <VWAP | Vol",
+    "entry": "303.23",
+    "exit": "303.21",
+    "pnl": "0.00%",
+    "result": "timeout",
+    "win": true
+  },
+  {
+    "time": "2026-08-17 13:50:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 38 | <VWAP | Vol",
+    "entry": "303.42",
+    "exit": "303.70",
+    "pnl": "-0.09%",
+    "result": "timeout",
+    "win": false
+  },
+  {
+    "time": "2026-08-18 14:20:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 40 | <VWAP | Vol",
+    "entry": "300.54",
+    "exit": "300.61",
+    "pnl": "-0.02%",
+    "result": "timeout",
+    "win": false
+  },
+  {
+    "time": "2026-08-20 11:05:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 42 | <VWAP | Vol",
+    "entry": "298.95",
+    "exit": "297.90",
+    "pnl": "0.35%",
+    "result": "TP",
+    "win": true
+  },
+  {
+    "time": "2026-08-20 14:05:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 35 | <VWAP | Vol",
+    "entry": "297.25",
+    "exit": "297.85",
+    "pnl": "-0.20%",
+    "result": "SL",
+    "win": false
+  },
+  {
+    "time": "2026-08-28 13:40:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 40 | <VWAP | Vol",
+    "entry": "296.38",
+    "exit": "295.94",
+    "pnl": "0.15%",
+    "result": "timeout",
+    "win": true
+  },
+  {
+    "time": "2026-09-01 13:35:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 37 | <VWAP | Vol",
+    "entry": "290.85",
+    "exit": "290.25",
+    "pnl": "0.20%",
+    "result": "timeout",
+    "win": true
+  },
+  {
+    "time": "2026-09-10 13:55:00",
+    "bias": "SHORT",
+    "score": -5,
+    "reasons": "EMA down | RSI 36 | <VWAP | Vol | Squeeze BO",
+    "entry": "287.59",
+    "exit": "287.33",
+    "pnl": "0.09%",
+    "result": "timeout",
+    "win": true
+  },
+  {
+    "time": "2026-09-16 14:20:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 35 | <VWAP | Vol",
+    "entry": "285.77",
+    "exit": "284.77",
+    "pnl": "0.35%",
+    "result": "TP",
+    "win": true
+  },
+  {
+    "time": "2026-09-23 11:10:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 41 | <VWAP | Vol",
+    "entry": "283.92",
+    "exit": "282.93",
+    "pnl": "0.35%",
+    "result": "TP",
+    "win": true
+  },
+  {
+    "time": "2026-10-01 10:45:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 39 | <VWAP | Vol",
+    "entry": "276.21",
+    "exit": "276.76",
+    "pnl": "-0.20%",
+    "result": "SL",
+    "win": false
+  },
+  {
+    "time": "2026-10-13 11:15:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 39 | <VWAP | Vol",
+    "entry": "276.30",
+    "exit": "276.42",
+    "pnl": "-0.04%",
+    "result": "timeout",
+    "win": false
+  },
+  {
+    "time": "2026-10-16 14:25:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 37 | <VWAP | Vol",
+    "entry": "270.47",
+    "exit": "269.98",
+    "pnl": "0.18%",
+    "result": "timeout",
+    "win": true
+  },
+  {
+    "time": "2026-10-26 15:20:00",
+    "bias": "SHORT",
+    "score": -4,
+    "reasons": "EMA down | RSI 44 | <VWAP | Vol",
+    "entry": "277.15",
+    "exit": "277.70",
+    "pnl": "-0.20%",
+    "result": "SL",
+    "win": false
+  }
+]

@@ -1,0 +1,43 @@
+# dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# env & keys - NEVER commit these
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# build
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# logs
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# one drive / temp
+tmp/
+temp/
+coverage/
+.nyc_output/

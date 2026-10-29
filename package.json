@@ -1,0 +1,21 @@
+{
+  "name": "iwm-signals-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "backtest": "tsx src/backtest.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "yahoo-finance2": "^2.13.3",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

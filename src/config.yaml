@@ -1,0 +1,18 @@
+ticker: IWM
+timeframes:
+  fast: "5m"
+  slow: "15m"
+  lookbackDays: 10
+strategy:
+  emaFast: 20
+  emaSlow: 50
+  rsiPeriod: 14
+  rsiLong: 35
+  rsiShort: 65
+  bbPeriod: 20
+  orbMinutes: 30
+  volumeMult: 1.5
+scoring:
+  minScore: 3
+alerts:
+  console: true
